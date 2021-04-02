@@ -30,3 +30,9 @@ body {
 .content {
 	grid-area: content;
 }
+
+.background {
+    grid-area: body;
+    padding: 10px;
+    background-color: #777;
+}
