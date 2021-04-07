@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global Citizenship</title>
+    <link rel= "icon" href = "images/globe.png">
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+	<div class="header">
+		<h1>Global Citizenship</h1>  
+	</div>
+
+	<div class="sidebar">
+		<h3>Places I've Lived</h3>
+        <p> I am fortunate to have been able to call a variety of places around the world home, even if for a brief period.
+            <br>
+            Here are 6 of the places I spent at least two months in!
+        <ol>
+            <li>I grew up in <b>Plainsboro, NJ.</b> As the name suggests, the town was plain and the land was open and expansive. I have many fond memories of running around the backyard with my sibilings and riding bikes with my neighborhood friends.
+            </li>
+            <li> Zooming out, I moved to <b>Hong Kong</b> after fourth grade, and spent the next five years in this exciting city.
+            </li>
+            <li>Next, I finished up my last three years of high school in <b>Massachusetts</b>.
+            </li>
+            <li>After high school, I was excited to attend UCLA and explore the coast I had never been to! I spent my first year at UCLA in <b>Dykstra Hall</b>.
+            </li>
+            <li>After my second year at UCLA, I went abroad for the summer to study physics at the <b>University of Nicosia</b> in the island country of Cyprus.
+            </li>
+            <li>Although it has been bittersweet to be finishing my last year of college from home, it has been nice to spend some more time with family back in <b>Princeton, NJ</b>. 
+            </li>
+        </ol>
+	</div>
+
+	<div class="content">
+		<div id="map"></div>
+	</div>
+
+
+    <script>
+        let lived = [
+            {
+                'title':'1/6 Plainsboro',
+                'lat': 40.3191,
+                'lon': -74.5923,
+                'desc': 'Childhood home'
+            },
+            {
+                'title':'2/6 Hong Kong',
+                'lat': 22.2842,
+                'lon': 114.1512,
+                'desc': 'Home in Hong Kong'
+            },
+            {
+                'title':'3/6 Andover',
+                'lat': 42.6512,
+                'lon': -71.1380,
+                'desc': 'Dorm for three years during high school'
+            },
+            {
+                'title': '4/6 UCLA',
+                'lat': 34.0699,
+                'lon': -118.4500,
+                'desc': 'First year dorms at UCLA'
+            },
+            {
+                'title': '5/6 Nicosia',
+                'lat': 35.1659,
+                'lon': 33.3185,
+                'desc': 'Study abroad dorm'
+            },
+            {
+                'title': '6/6 Princeton',
+                'lat': 40.3158,
+                'lon': -74.6325,
+                'desc': 'Currently working from home'
+            }
+        ]
+        
+
+        var map = L.map('map').setView([40.3191, -74.5923], 14);
+   
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+        lived.forEach(function(item){
+            //Replace the code that generates the single marker 
+            //with a loop that goes through your array of objects. 
+            //Then, create a marker for each location. 
+            //Make sure to include a title and description in the popup
+              
+            var marker = L.marker([item.lat, item.lon]).addTo(map)
+            .bindPopup(item.title+": "+item.desc)
+           //.openPopup()
+        });
+
+    </script>
+
+</body>
+</html>
