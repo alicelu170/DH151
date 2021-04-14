@@ -1,0 +1,47 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+    display: grid;
+	grid-template-rows: 100px 1fr; /* 100px tall. can use % */
+	grid-template-columns: 350px 1fr;
+	grid-template-areas: 
+	"header header" 
+	"sidebar content"; /*layout of site. flipping to content sidebar will flip the orientation on the page */
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+    background-color: rgb(98, 173, 148);
+}
+.sidebar {
+	grid-area: sidebar;
+	padding:10px;
+    background-color: rgb(220, 243, 234);
+}
+.content {
+	grid-area: content;
+}
+
+.background {
+    grid-area: body;
+    padding: 10px;
+    background-color: #777;
+}
+
+.sidebar-item{
+	padding: 10px;
+	background: green;
+	border: 1px solid gray;
+	margin: 5px;
+	color:rgb(0, 0, 0)
+
+}
