@@ -61,23 +61,45 @@ lived.forEach(function(item, index){
 
 myMarkers.addTo(map);
 
+var latlongs = [];
+
+lived.forEach(function(item, index){
+    eachpoint = [item.lat, item.lon];
+    latlongs.push(eachpoint);
+});
+
+let travelLines = L.polyline(latlongs, {color: 'cadetblue'}).addTo(map);
+map.fitBounds(travelLines.getBounds()); 
+
+
+/*LEAFLET POLYLINE EXAMPLE: 
+var latlngs = [
+    [45.51, -122.68],
+    [37.77, -122.43],
+    [34.04, -118.2]
+];
+var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+
+// zoom the map to the polyline
+map.fitBounds(polyline.getBounds()); */
+
+
 
 //create object(s) that define layers 
-    let layers = {
-        "My Markers": myMarkers
+    let addedlayers = {
+        "My Markers": myMarkers,
+        "Travel Lines": travelLines
     }
 
 // add layer control box. "null" is for basemap. layers, i.e., is defined above
-L.control.layers(null,layers).addTo(map);
-
-//returns the boundaries of layer: myMarkers.getBounds() 
-map.fitBounds(myMarkers.getBounds());
-
+L.control.layers(null,addedlayers).addTo(map);
 
 // to write a function: make a function name, and what parametrs it takes
 function flyToIndex(index){
     map.flyTo([lived[index].lat, lived[index].lon],12)
     //to open a popup automatially
     myMarkers.getLayers()[index].openPopup()
-
 }
+
+//returns the boundaries of layer: myMarkers.getBounds() 
+map.fitBounds(myMarkers.getBounds());
