@@ -1,0 +1,54 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 25% 75%;
+	grid-template-areas: 
+	"header header"
+	"sidebar content"
+	"footer footer";
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+	background-color: rgb(2, 2, 2);
+	color: rgb(78, 78, 78);
+	font-size: 3em;
+}
+
+.sidebar {
+	color: rgb(177, 177, 177);
+	grid-area: sidebar;
+	padding:10px;
+	background-color: rgb(49, 49, 49);
+	overflow: auto;
+}
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+	padding:10px;
+	background-color: rgb(175, 175, 175);
+}
+
+.sidebar-item{
+	padding: 10px;
+	background: rgb(128, 128, 128);
+	border: 5px solid rgb(66, 66, 66);
+	margin: 5px;
+	color:rgb(255, 255, 255);
+	cursor: pointer; /*cursor changes to hand when hovering*/
+}

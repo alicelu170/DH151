@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>US-China Plastic Waste Trade</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="js/papaparse.min.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		US-China Plastic Waste Trade, 2016 2017
+	</div>
+	<div class="sidebar">
+		<h3> Differential impacts of global plastic waste </h3>
+		<p> Prior to China's ban on importing foreign plastic waste in 2017, much of the United States' plastic waste entered China via the ports of Hong Kong.
+			<br>
+		<p>
+			Circles are proportional to the magnitude of plastic being imported and exported from each country.
+			<br>
+		<p>
+			Red represents the import of plastic waste, while green represents plastic leaving the country through exports.
+		<p>
+			Functionality:
+			<ul>Click to focus on a location below</ul>
+			<ul>Toggle the visibility of imports and exports in the top right corner</ul>
+			<ul>Hover over displayed circles to view details about the particular import / export </ul>
+		</p>
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+	<div class="footer">
+		Source: <a href="https://comtrade.un.org/data/"> UN Comtrade
+	</div>
+
+	<script src="js/map.js"></script>
+
+</body>
+</html>
