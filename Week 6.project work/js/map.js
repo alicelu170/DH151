@@ -14,6 +14,8 @@ var latlongs2016 = [];
 var latlongs2017 = [];
 var latlongs2018 = [];
 
+var layersarray = ["importmarkers2016", "importmarkers2017", "importmarkers2018"];
+
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
@@ -23,9 +25,6 @@ $( document ).ready(function() {
 function createMap(lat,lon,zl){
 	map = L.map('map').setView([lat,lon], zl);
 
-	/*L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);*/
     var OpenStreetMap_HOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
@@ -85,7 +84,7 @@ function makeAntLines(latlongsyear,arrayyear, setcolor){
         antlineoptions.color = setcolor;
 
         antPolyline = L.polyline.antPath([[37.09024, -95.712891], [latlongsyear[i][0], latlongsyear[i][1]]], antlineoptions);
-        antPolyline.addTo(map);
+        //antPolyline.addTo(map);
         arrayyear.addLayer(antPolyline);
     }
 }
@@ -101,9 +100,9 @@ function mapCSV(data){
             mapImportingCountries("red", item.Year, "2018", item["Netweight (kg)"], item.importLat, item.importLong, item.Reporter, item["Trade Flow"], item.Partner, latlongs2018, importmarkers2018);
         }
 	    // add featuregroup of markers to map
-		importmarkers2016.addTo(map)
-        importmarkers2017.addTo(map)
-        importmarkers2018.addTo(map)
+		importmarkers2016//.addTo(map)
+        importmarkers2017//.addTo(map)
+        importmarkers2018//.addTo(map)
 	})
 
     //adding toggle layers by year
@@ -118,8 +117,8 @@ function mapCSV(data){
     makeAntLines(latlongs2017,importmarkers2017, "pink");
     makeAntLines(latlongs2018,importmarkers2018, "red");
 
-    // add layer control box. "null" is for basemap. layers, i.e., is defined above
-    L.control.layers(null,addedlayers).addTo(map);
+    // add layer CONTROL BOX. "null" is for basemap. layers, i.e., is defined above
+    //L.control.layers(null,addedlayers).addTo(map);
 
 	// fit markers to map so that the map goes to the fitted markers
 	map.fitBounds(importmarkers2016.getBounds());
@@ -143,7 +142,7 @@ function mapCSV(data){
     });
 
     //for loop to add sidebar buttons
-    latlongs.forEach(function(item){
+    /*latlongs.forEach(function(item){
         //console.log(latlongs[i])
         $(".mapsidebar").append(`
             <div class ="sidebar-item"
@@ -152,6 +151,15 @@ function mapCSV(data){
             ${countries[i]} </p>
             </div>`)
         i++;
-    })
+    })*/
 
+   layersarray.forEach(function(){
+        $(".mapsidebar").append(`
+            <div class ="sidebar-item"
+            onclick= "${layersarray[i-1]}.addTo(map)">
+            <p class = "font2">
+            ${2015+i} </p>
+            </div>`)
+        i++;
+    })
 }
