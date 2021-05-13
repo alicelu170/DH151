@@ -1,0 +1,170 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+#map {
+	height: 100%;
+}
+
+body {
+    display: grid;
+	grid-template-rows: 220px 1fr 1fr 135px 65% 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"header header header"
+    "sidebar sidebar sidebar"
+    "howto howto howto"
+    "mapheader mapheader mapheader"
+    "mapsidebar mapcontent mapcontent"
+    "mapfooter mapfooter mapfooter"
+    "footer footer footer";
+}
+.font0 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(89, 124, 80);}
+.font1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;}
+.font2{font-family: 'Roboto', sans-serif; text-align: center;}
+.font3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: left;}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+
+/*h1 {text-align: center;}*/
+
+.header {
+	grid-area: header;
+	padding:10px;
+    background-color: rgb(238, 253, 220);
+}
+.sidebar {
+	grid-area: sidebar;
+	padding:10px 15% 10px 15%;
+    background-color: rgb(238, 253, 220);
+    text-align: center;
+    /*overflow-x: hidden; /* Hide horizontal scrollbar */
+    /*overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+.howto {
+    grid-area: howto;
+    padding:10px 20% 10px 20%;
+    background-color:  rgb(238, 253, 220);
+    text-align: center;
+}
+
+.background {
+    grid-area: body;
+    padding: 10px;
+    background-color: #777;
+}
+
+.mapheader {
+	grid-area: mapheader;
+	padding:10px;
+	background-color:rgb(211, 245, 158);
+	color: rgb(134, 134, 134);
+	text-align: center;
+}
+
+.mapsidebar {
+    grid-area: mapsidebar;
+	color:rgb(134, 134, 134);
+	padding-left:85px;
+	background-color: rgb(211, 245, 158);
+	overflow: auto;
+}
+
+.mapcontent {
+	grid-area: mapcontent;
+}
+
+.sidebar-item{
+	padding: 3px;
+	background:white;
+	border: 7px solid rgb(228, 228, 228);
+	margin: 5px;
+	color:gray;
+}
+
+.mapfooter {
+	grid-area: mapfooter;
+	padding:10px;
+	background-color: rgb(233, 233, 233);
+}
+
+
+
+
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(238, 253, 220);
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;
+}
+
+div.gallery {
+align-items: stretch;
+  margin: 5px;
+  padding-left: 10;
+  padding-top: 5%;
+  align-content: center;
+  float: left;
+  width: 250px;
+  flex:1;
+  background-color: rgb(238, 253, 220);
+  text-align: center;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  list-style: none;
+}
+
+
+
+
+
+/* The sidebar menu */
+.sidenav {
+    
+    width: 85px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; 
+    top: 25%; /* Stay at the top */
+    left: 0;
+    background-color: rgb(255, 255, 255); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #406654;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #180202;
+  }

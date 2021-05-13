@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rethink Recycle</title>
+	<meta charset="utf-8" />
+  <link rel= "icon" href = "images/RETHINK RECYCLE LOGO1.png">
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="js/leaflet-providers.js"></script>
+
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- papaparse for csv data -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+  <!-- Ant-Path -->
+  <!--<script src="https://unpkg.com/leaflet" ></script>-->
+  <script src="https://unpkg.com/leaflet-ant-path" ></script>
+
+</head>
+
+<!-- layout of what is visible on site -->
+<body>
+	<div class="header">
+    <nav class="font1">
+      <ul>
+        <a href="#GLOBAL-MAP">Global Map</a>
+        <a href="#ABOUT-US">About the Team</a>
+        <!--<a href="map.html">Map</a>-->
+
+      </ul>
+    </nav>
+    <img src="images/RETHINK RECYCLE LOGO1.png" alt="logo" style="height:150px;" class="center">
+		<!--<h1 class="font0">RETHINK RECYCLE</h1>-->
+	</div>
+
+
+
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <a class = "font3" href="#GLOBAL-MAP">Map</a>
+    <a class = "font3" href="#">MORE?</a>
+    <a class = "font3" href="#">MORE??</a>
+    <a class = "font3" href="#ABOUT-US">About</a>
+  </div>
+
+
+
+
+	<div class="sidebar">
+        <h2 class = "font1">THE GLOBAL IMPACT OF WASTE</h2>
+        <p class="font2">
+            The goal of Rethink Recycle is to help users understand the scope of the global waste-management network. While many of us are able to sort our plastic waste and hope that it is in fact recycled and repurposed, the truth is that the recycling process is not so straightforward. 
+            <br>
+            The United States only recycles a fraction of its plastic waste and instead exports a large amount of it to countries across the globe. While countries differ in the way they manage their own waste, these practices also all have different effects on both human and environmental health. Therefore, the true impact of plastic waste goes beyond sorting one’s recycling; Rethink Recycle hopes to make this reality clearer.   
+        </p>	
+    </div>
+
+    <div class = "howto">
+        <h2 class="font1">HOW TO USE</h2>
+        <p class = "font2">
+            Currently, the Rethink Recycle map shows the global trade of plastic waste that the United States engaged in between the years of 2016 to 2018. 
+            <br>
+            All layers can be viewed in the top right corner. These layers can be used to compare the magnitude of plastic waste being imported and exported by the United States to the world in 2016, 2017, and 2018. Green represents exporting plastic waste, while red represents importing plastic waste.
+            <br>
+            As the mouse moves over a circle, a popup will appear that will include the countries involved, the weight of the plastic waste transported, and the year the import/export occurred.
+            <br>
+            All circle sizes are proportional to the amount of plastic transported. For best viewing results, layers should be isolated for analysis.
+            </p>
+    </div>
+
+ <div class="footer">
+  <a id="ABOUT-US"></a>
+    <div class="gallery">
+        <img src="images/alice.png" alt="Alice" width="600" height="400">
+        <p class = "font2">
+        Alice (she/her) is a fourth year Human Biology & Society and Sociology double major. She is interested in public health and environmental justice and is looking forward to working with both academic research with web mapping in this project.
+        </p>
+    </div>
+    <div class="gallery">
+      <img src="images/emily.png" alt="Emily" width="600" height="400">
+      <p class = "font2">
+          Emily (she.her) is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively.
+      </p>
+    </div>
+    <div class="gallery">
+      <img src="images/hozumi.png" alt="Hozumi" width="600" height="400">
+      <p class = "font2">
+          Hozumi (she/her) is a fourth-year Sociology major and Global Health/Digital Humanities double minor. She is interested in using digital mapping to address global public health issues.
+      </p>
+    </div> 
+  </div>
+
+  <div class="mapheader">
+    <a id="GLOBAL-MAP"></a>
+		<h1 class= "font0"> THE UNITED STATES & GLOBAL PLASTIC</h1>
+	</div>
+ 
+  <div class="mapsidebar">
+		<p class = "font2">The countries below have all been a partner with the United States in plastic waste trade. They have imported plastic waste from the U.S. between the years of 2016, 2017, or 2018.</p>
+		<br>
+		<p class="font2">Click on a partner country to zoom in.</p>
+	</div>
+
+	<div class="mapcontent">
+		<div id="map"></div>
+	</div>
+
+	<div class="mapfooter">
+  <p class = "font2">
+    Data source: <a href="https://comtrade.un.org/data/">UN Comtrade</a>
+  </p>
+	</div>
+
+	<script src="js/map.js"></script>
+
+</body>
+</html>
