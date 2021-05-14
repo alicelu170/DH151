@@ -16,10 +16,19 @@ var latlongs2018 = [];
 
 var layersarray = ["importmarkers2016", "importmarkers2017", "importmarkers2018"];
 
+let geojsonPath = 'data/world.json'; //where the geojson file is located
+let geojson_data; //placeholder for data
+let geojson_layer; //placeholder for layer of geojson
+
+//let info_panel = L.control(); //postion of panel is default to top right
+
+
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
 	readCSV(path);
+    getGeoJSON();
+
 });
 // create the empty map
 function createMap(lat,lon,zl){
@@ -43,6 +52,9 @@ function readCSV(path){
 		}
 	});
 }
+
+
+
 
 /*–––––––––CIRCLES–––––––––*/
 //design for circles of points of import
@@ -95,9 +107,9 @@ function mapCSV(data){
         if (item["Trade Flow"] === "Export" || item ["Trade Flow"] === "Re-Export"){
             mapImportingCountries("green", item.Year, "2016", item["Netweight (kg)"], item.importLat, item.importLong, item.Reporter, item["Trade Flow"], item.Partner, latlongs2016, importmarkers2016);
 
-            mapImportingCountries("pink", item.Year, "2017", item["Netweight (kg)"], item.importLat, item.importLong, item.Reporter, item["Trade Flow"], item.Partner, latlongs2017, importmarkers2017);
+            mapImportingCountries("red", item.Year, "2017", item["Netweight (kg)"], item.importLat, item.importLong, item.Reporter, item["Trade Flow"], item.Partner, latlongs2017, importmarkers2017);
 
-            mapImportingCountries("red", item.Year, "2018", item["Netweight (kg)"], item.importLat, item.importLong, item.Reporter, item["Trade Flow"], item.Partner, latlongs2018, importmarkers2018);
+            mapImportingCountries("blue", item.Year, "2018", item["Netweight (kg)"], item.importLat, item.importLong, item.Reporter, item["Trade Flow"], item.Partner, latlongs2018, importmarkers2018);
         }
 	    // add featuregroup of markers to map
 		importmarkers2016//.addTo(map)
@@ -114,8 +126,8 @@ function mapCSV(data){
 
     //making AntLines by year
     makeAntLines(latlongs2016,importmarkers2016,"green");
-    makeAntLines(latlongs2017,importmarkers2017, "pink");
-    makeAntLines(latlongs2018,importmarkers2018, "red");
+    makeAntLines(latlongs2017,importmarkers2017, "red");
+    makeAntLines(latlongs2018,importmarkers2018, "blue");
 
     // add layer CONTROL BOX. "null" is for basemap. layers, i.e., is defined above
     //L.control.layers(null,addedlayers).addTo(map);
@@ -163,3 +175,115 @@ function mapCSV(data){
         i++;
     })
 }
+
+/*–––––––––GEOJSON–––––––––*/
+function getGeoJSON(){
+	$.getJSON(geojsonPath,function(data){
+		console.log(data)
+
+		// put the data in a global variable
+		geojson_data = data;
+
+		// call the map function
+		mapGeoJSON(/*'pop_est'  OR whatever feature to call*/) // add a field to be used
+	})
+}
+function mapGeoJSON(field /*, num_class, etc....*/){
+
+	// clear layers in case it has been mapped already
+	if (geojson_layer){
+		geojson_layer.clearLayers()
+	}
+	
+	// globalize the field to map
+	fieldtomap = field;
+
+	// create an empty array
+	let values = [];
+
+	// based on the provided field, enter each value into the array
+	geojson_data.features.forEach(function(item,index){
+		values.push(item.properties[field])
+	})
+// create the geojson layer
+geojson_layer = L.geoJson(geojson_data,{
+    style: getStyle,
+    onEachFeature: onEachFeature // actions on each feature
+}).addTo(map);
+    // create the infopanel
+	//createInfoPanel(); //(not create legend as in the lab)
+
+}
+//outline of countries
+function getStyle(feature){
+	return {
+		stroke: true,
+		color: '#7ccfcd',
+		weight: 1,
+		fill: true,
+		fillOpacity: 0
+	}
+}
+
+// Function that defines what will happen on user interactions with each feature
+function onEachFeature(feature, layer) {
+	layer.on({
+		//mouseover: highlightFeature,
+		//mouseout: resetHighlight,
+		click: zoomToFeature
+	});
+}
+
+// on mouse over, highlight the feature
+/*function highlightFeature(e) {
+	var layer = e.target;
+
+	// style to use on mouse over
+	layer.setStyle({
+		weight: 2,
+		color: '#89b06e',
+		fillOpacity: 0.5
+	});
+	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+		layer.bringToFront();
+	}
+     //updates the infopanel. called function in later code
+     //info_panel.update(layer.feature.properties)
+}*/
+
+// on mouse out, reset the style, otherwise, it will remain highlighted
+/*function resetHighlight(e) {
+	geojson_layer.resetStyle(e.target);
+    //info_panel.update() // resets infopanel when not highlighted, to default
+}*/
+
+// on mouse click on a feature, zoom in to it
+function zoomToFeature(e) {
+	map.fitBounds(e.target.getBounds());
+}
+
+/*function createInfoPanel(){
+
+	info_panel.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+		this.update();
+		return this._div;
+	};
+
+	// method that we will use to update the control based on feature properties fed to it. 
+    //whatever is highlighted, put that in the info panel.
+	info_panel.update = function (properties) {
+		// if feature is highlighted
+		if(properties){
+			this._div.innerHTML = `<b>${properties.name}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
+		}
+		// if feature is not highlighted:
+        //but if nothing is highlighted, then panel will tell user to do something
+		else
+		{
+			this._div.innerHTML = 'Hover over a country';
+		}
+	};
+
+	info_panel.addTo(map);
+}*/
