@@ -92,6 +92,7 @@ let antlineoptions={
 };
 //function to make AntLines to all countries that US exported plastic to for a given year and add to layer
 function makeAntLines(latlongsyear,arrayyear, setcolor){
+
     for(i=0; i<latlongsyear.length; i++){
         antlineoptions.color = setcolor;
 
@@ -165,16 +166,47 @@ function mapCSV(data){
         i++;
     })*/
 
-   layersarray.forEach(function(){
+   /*layersarray.forEach(function(){
+    // clear layers if it exists
+	/*if(importmarkers2016){
+    	importmarkers2016.clearLayers();	
+	}
+    else if(importmarkers2017){
+        importmarkers2017.clearLayers();
+    }
+    else if(importmarkers2018){
+        importmarkers2018.clearLayers();
+    }
         $(".mapsidebar").append(`
             <div class ="sidebar-item"
-            onclick= "${layersarray[i-1]}.addTo(map)">
+            onclick= "${layersarray[i-1]}.addTo(map)"
+            }>
+            <p class = "font2">
+            ${2015+i} </p>
+            </div>`)   
+        i++;
+    })*/
+
+
+
+    layersarray.forEach(function(){
+        $(".mapsidebar").append(`
+            <div class ="sidebar-item"
+            onclick="toggle(${layersarray[i-1]})">
             <p class = "font2">
             ${2015+i} </p>
             </div>`)
         i++;
     })
 }
+function toggle(layer) {
+	if (map.hasLayer(layer)) {
+		map.removeLayer(layer);
+	} else {
+		map.addLayer(layer);
+	}
+}
+
 
 /*–––––––––GEOJSON–––––––––*/
 function getGeoJSON(){

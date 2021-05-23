@@ -21,12 +21,12 @@ let info_panel = L.control(); //postion of panel is default to top right
 
 // initialize
 $( document ).ready(function() {
-	createMap(chorolat,chorolon,chorozl);
-	getGeoJSON();
+	createChoroMap(chorolat,chorolon,chorozl);
+	getChoroGeoJSON();
 });
 
 // create the map
-function createMap(lat,lon,zl){
+function createChoroMap(lat,lon,zl){
 	choromap = L.map('choromap').setView([chorolat,chorolon], chorozl);
 
 	var OpenStreetMap_HOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -37,7 +37,7 @@ function createMap(lat,lon,zl){
 }
 
 // function to get the geojson data
-function getGeoJSON(){
+function getChoroGeoJSON(){
 
 	$.getJSON(chorogeojsonPath,function(data){
 		console.log(data)
@@ -46,12 +46,12 @@ function getGeoJSON(){
 		chorogeojson_data = data;
 
 		// call the map function
-		mapGeoJSON('Mismanaged_plastic_waste_2010_tonnes') // add a field to be used
+		mapChoroGeoJSON('Mismanaged_plastic_waste_2010_tonnes') // add a field to be used
 	})
 }
 
 //calling this function with ANY FIELD will REDRAW the map to fit those parameters 
-function mapGeoJSON(field /*, num_class, etc....*/){
+function mapChoroGeoJSON(field /*, num_class, etc....*/){
 
 	// clear layers in case it has been mapped already
 	if (chorogeojson_layer){
@@ -80,21 +80,21 @@ function mapGeoJSON(field /*, num_class, etc....*/){
 
     // create the geojson layer
     chorogeojson_layer = L.geoJson(chorogeojson_data,{
-        style: getStyle,
-        onEachFeature: onEachFeature // actions on each feature
+        style: getChoroStyle,
+        onEachFeature: onEachChoroFeature // actions on each feature
     }).addTo(choromap);
 
 	choromap.fitBounds(chorogeojson_layer.getBounds())
 
     // create the legend. function is created towards bottom of code
-	createLegend();
+	createChoroLegend();
 
     // create the infopanel
 	createInfoPanel(); //(not create legend as in the lab)
 }
 
 
-function getStyle(feature){
+function getChoroStyle(feature){
 	return {
 		stroke: true,
 		color: 'white',
@@ -106,7 +106,7 @@ function getStyle(feature){
 }
 
 
-// return the color for each feature. called in getStyle --> gets color from population estimate number from data 
+// return the color for each feature. called in getChoroStyle --> gets color from population estimate number from data 
 /*function getColor(d) {
 	return d > 1000000 ? '#800026' : // syntax: if value of d is greater than xxxxx, then make it xxx color.
 		   d > 500000  ? '#BD0026' :
@@ -118,7 +118,7 @@ function getStyle(feature){
 					  '#FFEDA0';
 }*/
 
-function createLegend(){
+function createChoroLegend(){
 	legend.onAdd = function (choromap) {
         //creates the html div that holds the info for legend
 		var div = L.DomUtil.create('div', 'info legend'),
@@ -146,30 +146,30 @@ function createLegend(){
 }
 
 // Function that defines what will happen on user interactions with each feature
-function onEachFeature(feature, layer) {
+function onEachChoroFeature(feature, layer) {
 	layer.on({
 		mouseover: highlightFeature,
 		mouseout: resetHighlight,
-		click: zoomToFeature
+		click: zoomToChoroFeature
 	});
 }
 
 // on mouse over, highlight the feature
 function highlightFeature(e) {
-	var layer = e.target;
+	var chorolayer = e.target;
 
 	// style to use on mouse over
-	layer.setStyle({
+	chorolayer.setStyle({
 		weight: 2,
 		color: '#666',
-		fillOpacity: 0.7
+		fillOpacity: 0.8
 	});
 
 	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-		layer.bringToFront();
+		chorolayer.bringToFront();
 	}
     //updates the infopanel
-    info_panel.update(layer.feature.properties)
+    info_panel.update(chorolayer.feature.properties)
 }
 
 // on mouse out, reset the style, otherwise, it will remain highlighted
@@ -179,7 +179,7 @@ function resetHighlight(e) {
 }
 
 // on mouse click on a feature, zoom in to it
-function zoomToFeature(e) {
+function zoomToChoroFeature(e) {
 	choromap.fitBounds(e.target.getBounds());
 }
 
