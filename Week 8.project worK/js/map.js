@@ -165,15 +165,22 @@ function mapCSV(data){
         i++;
     })*/
 
-   layersarray.forEach(function(){
+    layersarray.forEach(function(){
         $(".mapsidebar").append(`
             <div class ="sidebar-item"
-            onclick= "${layersarray[i-1]}.addTo(map)">
+            onclick="toggle(${layersarray[i-1]})">
             <p class = "font2">
             ${2015+i} </p>
             </div>`)
         i++;
     })
+}
+function toggle(layer) {
+	if (map.hasLayer(layer)) {
+		map.removeLayer(layer);
+	} else {
+		map.addLayer(layer);
+	}
 }
 
 /*–––––––––GEOJSON–––––––––*/
