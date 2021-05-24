@@ -75,7 +75,7 @@ function mapChoroGeoJSON(field /*, num_class, etc....*/){
 	// set up the "brew" options
 	brew.setSeries(values);
 	brew.setNumClasses(9 /*num_class*/); //how many groups of colors there are 
-	brew.setColorCode('YlOrRd');
+	brew.setColorCode('YlGn');
 	brew.classify('quantile'); //how the color groups are classiflied 
 
     // create the geojson layer
