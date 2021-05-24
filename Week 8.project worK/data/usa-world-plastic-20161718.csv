@@ -19,7 +19,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2016,Import,USA,37.09024,-95.712891,Denmark,56.26392,9.501785,"Waste, parings and scrap, of plastics",Weight in kilograms,4204329,4204329,2406552
 2016,Import,USA,37.09024,-95.712891,Nigeria,9.081999,8.675277,"Waste, parings and scrap, of plastics",Weight in kilograms,4171330,4171330,2641969
 2016,Import,USA,37.09024,-95.712891,Venezuela,6.42375,-66.58973,"Waste, parings and scrap, of plastics",Weight in kilograms,4027366,4027366,2046309
-2016,Export,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,3769385,3769385,1778191
+2016,Export,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,3769385,3769385,1778191
 2016,Import,USA,37.09024,-95.712891,Japan,36.204824,138.252924,"Waste, parings and scrap, of plastics",Weight in kilograms,3719877,3719877,7924798
 2016,Import,USA,37.09024,-95.712891,Belgium,50.503887,4.469936,"Waste, parings and scrap, of plastics",Weight in kilograms,3534261,3534261,1908306
 2016,Import,USA,37.09024,-95.712891,Peru,-9.189967,-75.015152,"Waste, parings and scrap, of plastics",Weight in kilograms,3471441,3471441,2295380
@@ -38,7 +38,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2016,Export,USA,37.09024,-95.712891,Dominican Rep.,18.735693,-70.162651,"Waste, parings and scrap, of plastics",Weight in kilograms,1762082,1762082,2941193
 2016,Export,USA,37.09024,-95.712891,Colombia,4.570868,-74.297333,"Waste, parings and scrap, of plastics",Weight in kilograms,1730625,1730625,1421670
 2016,Export,USA,37.09024,-95.712891,Pakistan,30.375321,69.345116,"Waste, parings and scrap, of plastics",Weight in kilograms,1640484,1640484,870760
-2016,Import,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,1572539,1572539,871890
+2016,Import,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,1572539,1572539,871890
 2016,Import,USA,37.09024,-95.712891,Austria,47.516231,14.550072,"Waste, parings and scrap, of plastics",Weight in kilograms,1371089,1371089,643037
 2016,Export,USA,37.09024,-95.712891,Bangladesh,23.684994,90.356331,"Waste, parings and scrap, of plastics",Weight in kilograms,1370246,1370246,562085
 2016,Import,USA,37.09024,-95.712891,Sweden,60.128161,18.643501,"Waste, parings and scrap, of plastics",Weight in kilograms,1327301,1327301,509082
@@ -97,7 +97,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2016,Export,USA,37.09024,-95.712891,Saudi Arabia,23.885942,45.079162,"Waste, parings and scrap, of plastics",Weight in kilograms,67899,67899,38913
 2016,Import,USA,37.09024,-95.712891,Switzerland,46.818188,8.227512,"Waste, parings and scrap, of plastics",Weight in kilograms,63414,63414,353836
 2016,Export,USA,37.09024,-95.712891,Heard Island and McDonald Islands,-53.08181,73.504158,"Waste, parings and scrap, of plastics",Weight in kilograms,57000,57000,15000
-2016,Export,USA,37.09024,-95.712891,Georgia,32.1656221,-82.900075,"Waste, parings and scrap, of plastics",Weight in kilograms,55161,55161,34454
+2016,Export,USA,37.09024,-95.712891,Georgia,41.79443,44.76023,"Waste, parings and scrap, of plastics",Weight in kilograms,55161,55161,34454
 2016,Export,USA,37.09024,-95.712891,Austria,47.516231,14.550072,"Waste, parings and scrap, of plastics",Weight in kilograms,49119,49119,23810
 2016,Export,USA,37.09024,-95.712891,United Arab Emirates,23.424076,53.847818,"Waste, parings and scrap, of plastics",Weight in kilograms,48693,48693,47347
 2016,Import,USA,37.09024,-95.712891,Oman,21.4735329,55.975413,"Waste, parings and scrap, of plastics",Weight in kilograms,47772,47772,36263
@@ -119,7 +119,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2016,Export,USA,37.09024,-95.712891,Argentina,-38.416097,-63.616672,"Waste, parings and scrap, of plastics",Weight in kilograms,22909,22909,26401
 2016,Import,USA,37.09024,-95.712891,Czechia,49.817492,15.472962,"Waste, parings and scrap, of plastics",Weight in kilograms,21937,21937,31550
 2016,Export,USA,37.09024,-95.712891,Jamaica,18.109581,-77.297508,"Waste, parings and scrap, of plastics",Weight in kilograms,21102,21102,75418
-2016,Re-Export,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,20707,20707,17735
+2016,Re-Export,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,20707,20707,17735
 2016,Import,USA,37.09024,-95.712891,New Zealand,-40.900557,174.885971,"Waste, parings and scrap, of plastics",Weight in kilograms,20666,20666,33445
 2016,Import,USA,37.09024,-95.712891,Norway,60.472024,8.468946,"Waste, parings and scrap, of plastics",Weight in kilograms,20209,20209,6498
 2016,Export,USA,37.09024,-95.712891,Sri Lanka,7.873054,80.771797,"Waste, parings and scrap, of plastics",Weight in kilograms,20000,20000,3000
@@ -133,7 +133,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2016,Re-Export,USA,37.09024,-95.712891,Netherlands,52.132633,5.291266,"Waste, parings and scrap, of plastics",Weight in kilograms,10862,10862,13898
 2016,Export,USA,37.09024,-95.712891,Kuwait,29.31166,47.481766,"Waste, parings and scrap, of plastics",Weight in kilograms,10836,10836,41628
 2016,Export,USA,37.09024,-95.712891,Poland,51.919438,19.145136,"Waste, parings and scrap, of plastics",No Quantity,0,10543,3900
-2016,Export,USA,37.09024,-95.712891,Jordan,44.6711949,-93.629429,"Waste, parings and scrap, of plastics",Weight in kilograms,9023,9023,48544
+2016,Export,USA,37.09024,-95.712891,Jordan,31.6732,36.31298,"Waste, parings and scrap, of plastics",Weight in kilograms,9023,9023,48544
 2016,Export,USA,37.09024,-95.712891,Mauritania,21.00789,-10.940835,"Waste, parings and scrap, of plastics",Weight in kilograms,8881,8881,40726
 2016,Re-Export,USA,37.09024,-95.712891,Mauritania,21.00789,-10.940835,"Waste, parings and scrap, of plastics",Weight in kilograms,8881,8881,40726
 2016,Export,USA,37.09024,-95.712891,Denmark,56.26392,9.501785,"Waste, parings and scrap, of plastics",Weight in kilograms,7983,7983,15840
@@ -172,7 +172,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2017,Export,USA,37.09024,-95.712891,Turkey,38.963745,35.243322,"Waste, parings and scrap, of plastics",Weight in kilograms,14590529,14590529,4202379
 2017,Import,USA,37.09024,-95.712891,Honduras,15.199999,-86.241905,"Waste, parings and scrap, of plastics",Weight in kilograms,11826042,11826042,11156829
 2017,Import,USA,37.09024,-95.712891,Ecuador,-1.831239,-78.183406,"Waste, parings and scrap, of plastics",Weight in kilograms,10480481,10480481,7720988
-2017,Export,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,9158616,9158616,3399593
+2017,Export,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,9158616,9158616,3399593
 2017,Export,USA,37.09024,-95.712891,Spain,40.463667,-3.74922,"Waste, parings and scrap, of plastics",Weight in kilograms,8593946,8593946,4178527
 2017,Import,USA,37.09024,-95.712891,Italy,41.87194,12.56738,"Waste, parings and scrap, of plastics",Weight in kilograms,8236650,8236650,4721567
 2017,Import,USA,37.09024,-95.712891,Peru,-9.189967,-75.015152,"Waste, parings and scrap, of plastics",Weight in kilograms,7985866,7985866,5544555
@@ -189,7 +189,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2017,Export,USA,37.09024,-95.712891,Colombia,4.570868,-74.297333,"Waste, parings and scrap, of plastics",Weight in kilograms,3126278,3126278,6327529
 2017,Export,USA,37.09024,-95.712891,Pakistan,30.375321,69.345116,"Waste, parings and scrap, of plastics",Weight in kilograms,2778647,2778647,906497
 2017,Import,USA,37.09024,-95.712891,Guatemala,15.783471,-90.230759,"Waste, parings and scrap, of plastics",Weight in kilograms,2583487,2583487,1620729
-2017,Import,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,2412823,2412823,1247142
+2017,Import,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,2412823,2412823,1247142
 2017,Import,USA,37.09024,-95.712891,Thailand,15.870032,100.992541,"Waste, parings and scrap, of plastics",Weight in kilograms,2388783,2388783,2943928
 2017,Import,USA,37.09024,-95.712891,Viet Nam,14.058324,108.277199,"Waste, parings and scrap, of plastics",Weight in kilograms,2340114,2340114,839176
 2017,Export,USA,37.09024,-95.712891,Guatemala,15.783471,-90.230759,"Waste, parings and scrap, of plastics",Weight in kilograms,2319708,2319708,1680458
@@ -264,7 +264,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2017,Import,USA,37.09024,-95.712891,Switzerland,46.818188,8.227512,"Waste, parings and scrap, of plastics",Weight in kilograms,66316,66316,333803
 2017,Export,USA,37.09024,-95.712891,Morocco,31.791702,-7.09262,"Waste, parings and scrap, of plastics",Weight in kilograms,64600,64600,56002
 2017,Export,USA,37.09024,-95.712891,Ireland,53.1423672,-7.6920536,"Waste, parings and scrap, of plastics",Weight in kilograms,63265,63265,637809
-2017,Re-Export,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,62203,62203,92704
+2017,Re-Export,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,62203,62203,92704
 2017,Export,USA,37.09024,-95.712891,Sweden,60.128161,18.643501,"Waste, parings and scrap, of plastics",Weight in kilograms,61762,61762,243822
 2017,Export,USA,37.09024,-95.712891,Nicaragua,12.865416,-85.207229,"Waste, parings and scrap, of plastics",Weight in kilograms,61557,61557,106156
 2017,Export,USA,37.09024,-95.712891,Uruguay,-32.522779,-55.765835,"Waste, parings and scrap, of plastics",Weight in kilograms,60000,60000,57485
@@ -339,7 +339,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2018,Export,USA,37.09024,-95.712891,Thailand,15.870032,100.992541,"Waste, parings and scrap, of plastics",Weight in kilograms,106929191,106929191,43354915
 2018,Export,USA,37.09024,-95.712891,Viet Nam,14.058324,108.277199,"Waste, parings and scrap, of plastics",Weight in kilograms,74433848,74433848,27438320
 2018,Export,USA,37.09024,-95.712891,Mexico,23.634501,-102.55278,"Waste, parings and scrap, of plastics",Weight in kilograms,46201221,46201221,24513283
-2018,Export,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,35510222,35510222,14106166
+2018,Export,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,35510222,35510222,14106166
 2018,Export,USA,37.09024,-95.712891,Indonesia,-0.789275,113.921327,"Waste, parings and scrap, of plastics",Weight in kilograms,27385165,27385165,9247584
 2018,Export,USA,37.09024,-95.712891,Turkey,38.963745,35.243322,"Waste, parings and scrap, of plastics",Weight in kilograms,23686786,23686786,6080379
 2018,Import,USA,37.09024,-95.712891,Germany,51.165691,10.451526,"Waste, parings and scrap, of plastics",Weight in kilograms,12619831,12619831,7658000
@@ -380,7 +380,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2018,Import,USA,37.09024,-95.712891,United Kingdom,55.378051,-3.435973,"Waste, parings and scrap, of plastics",Weight in kilograms,1539396,1539396,670147
 2018,Import,USA,37.09024,-95.712891,Guatemala,15.783471,-90.230759,"Waste, parings and scrap, of plastics",Weight in kilograms,1512258,1512258,1032738
 2018,Export,USA,37.09024,-95.712891,Cambodia,12.565679,104.990963,"Waste, parings and scrap, of plastics",Weight in kilograms,1463486,1463486,349170
-2018,Import,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,1458926,1458926,901667
+2018,Import,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,1458926,1458926,901667
 2018,Export,USA,37.09024,-95.712891,Nigeria,9.081999,8.675277,"Waste, parings and scrap, of plastics",Weight in kilograms,1383311,1383311,361169
 2018,Export,USA,37.09024,-95.712891,Colombia,4.570868,-74.297333,"Waste, parings and scrap, of plastics",Weight in kilograms,1372566,1372566,1203836
 2018,Import,USA,37.09024,-95.712891,Austria,47.516231,14.550072,"Waste, parings and scrap, of plastics",Weight in kilograms,1320878,1320878,693961
@@ -428,7 +428,7 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2018,Import,USA,37.09024,-95.712891,Bangladesh,23.684994,90.356331,"Waste, parings and scrap, of plastics",Weight in kilograms,234240,234240,79112
 2018,Export,USA,37.09024,-95.712891,South Africa,-30.559482,22.937506,"Waste, parings and scrap, of plastics",Weight in kilograms,231073,231073,110600
 2018,Import,USA,37.09024,-95.712891,Ireland,53.1423672,-7.6920536,"Waste, parings and scrap, of plastics",Weight in kilograms,202166,202166,479948
-2018,Export,USA,37.09024,-95.712891,Georgia,32.1656221,-82.900075,"Waste, parings and scrap, of plastics",Weight in kilograms,200458,200458,119332
+2018,Export,USA,37.09024,-95.712891,Georgia,41.79443,44.76023,"Waste, parings and scrap, of plastics",Weight in kilograms,200458,200458,119332
 2018,Export,USA,37.09024,-95.712891,Oman,21.4735329,55.975413,"Waste, parings and scrap, of plastics",Weight in kilograms,193221,193221,82978
 2018,Import,USA,37.09024,-95.712891,Barbados,13.193887,-59.543198,"Waste, parings and scrap, of plastics",Weight in kilograms,190507,190507,137079
 2018,Export,USA,37.09024,-95.712891,Myanmar,21.916221,95.955974,"Waste, parings and scrap, of plastics",Weight in kilograms,186359,186359,65928
@@ -499,11 +499,11 @@ Year,Trade Flow,Reporter,exportLat,exportLong,Partner,importLat,importLong,Commo
 2018,Export,USA,37.09024,-95.712891,Denmark,56.26392,9.501785,"Waste, parings and scrap, of plastics",Weight in kilograms,4471,4471,28402
 2018,Re-Export,USA,37.09024,-95.712891,Sweden,60.128161,18.643501,"Waste, parings and scrap, of plastics",Weight in kilograms,4196,4196,31607
 2018,Export,USA,37.09024,-95.712891,Kuwait,29.31166,47.481766,"Waste, parings and scrap, of plastics",Weight in kilograms,2968,2968,25000
-2018,Re-Export,USA,37.09024,-95.712891,Rep. of Korea,29.745424,-95.462645,"Waste, parings and scrap, of plastics",Weight in kilograms,2300,2300,25504
+2018,Re-Export,USA,37.09024,-95.712891,Rep. of Korea,36.12529,127.66382,"Waste, parings and scrap, of plastics",Weight in kilograms,2300,2300,25504
 2018,Re-Export,USA,37.09024,-95.712891,Colombia,4.570868,-74.297333,"Waste, parings and scrap, of plastics",Weight in kilograms,1299,1299,13413
 2018,Re-Export,USA,37.09024,-95.712891,United Kingdom,55.378051,-3.435973,"Waste, parings and scrap, of plastics",Weight in kilograms,1279,1279,88749
 2018,Export,USA,37.09024,-95.712891,Iraq,33.223191,43.679291,"Waste, parings and scrap, of plastics",Weight in kilograms,1141,1141,12772
-2018,Export,USA,37.09024,-95.712891,Jordan,44.6711949,-93.629429,"Waste, parings and scrap, of plastics",Weight in kilograms,868,868,5831
+2018,Export,USA,37.09024,-95.712891,Jordan,31.6732,36.31298,"Waste, parings and scrap, of plastics",Weight in kilograms,868,868,5831
 2018,Re-Export,USA,37.09024,-95.712891,Chile,-35.675147,-71.542969,"Waste, parings and scrap, of plastics",Weight in kilograms,732,732,16597
 2018,Export,USA,37.09024,-95.712891,Br. Virgin Isds,18.420695,-64.639968,"Waste, parings and scrap, of plastics",Weight in kilograms,647,647,9234
 2018,Export,USA,37.09024,-95.712891,Bahrain,26.0667,50.5577,"Waste, parings and scrap, of plastics",Weight in kilograms,626,626,10424
