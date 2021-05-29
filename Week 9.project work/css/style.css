@@ -187,21 +187,36 @@ a:hover{
 .choroinfo {
 	padding: 6px 8px;
 	font: 14px/16px 'Roboto', sans-serif;
-	background: white;
+	background: rgb(109, 44, 44);
 	background: rgba(255,255,255,0.8);
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 	border-radius: 5px;
 	min-width: 250px;
 	min-height: 50px;
 }
+
 .choroinfo h4 {
 	margin: 0 0 5px;
 	color: #777;
 }
 
+
+  /*info panel*/
+  .legendinfo {
+    padding: 6px 8px;
+    font: 14px 'Roboto', sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    min-width: auto;
+    min-height: auto;
+  }
+
 .legend {
 	line-height: 18px;
 	color: #555;
+  text-align: left;
 }
 .legend i {
 	width: 18px;
@@ -285,14 +300,3 @@ div.gallery img {
 
 
 
-  /*info panel*/
-  .info {
-	padding: 6px 8px;
-	font: 14px 'Roboto', sans-serif;
-	background: white;
-	background: rgba(255,255,255,0.8);
-	box-shadow: 0 0 15px rgba(0,0,0,0.2);
-	border-radius: 5px;
-	min-width: auto;
-	min-height: auto;
-}

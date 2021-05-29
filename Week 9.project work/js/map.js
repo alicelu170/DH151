@@ -57,8 +57,7 @@ function readCSV(path){
 	});
 }
 
-//TABLE!
-    
+/*–––––––––TABLE–––––––––*/
 function createTable(data){
 	// empty array for data
 	let datafortable = [];
@@ -137,6 +136,7 @@ function mapImportingCountries(setcolor, datayear, year, dataweight, latitude, l
     }
 };
 
+
 /*–––––––––ANTLINES–––––––––*/
 //design for AntLines
 let antlineoptions={
@@ -208,18 +208,6 @@ function mapCSV(data){
         }
     });
 
-    //for loop to add sidebar buttons
-    /*latlongs.forEach(function(item){
-        //console.log(latlongs[i])
-        $(".mapsidebar").append(`
-            <div class ="sidebar-item"
-            onclick= "map.flyTo([${latlongs[i]}], 5)"> 
-            <p class = "font2">
-            ${countries[i]} </p>
-            </div>`)
-        i++;
-    })*/
-
     layersarray.forEach(function(){
         $(".mapsidebar").append(`
             <div class ="sidebar-item"
@@ -272,9 +260,6 @@ geojson_layer = L.geoJson(geojson_data,{
     style: getStyle,
     onEachFeature: onEachFeature // actions on each feature
 }).addTo(map);
-    // create the infopanel
-	//createInfoPanel(); //(not create legend as in the lab)
-
 }
 //outline of countries
 function getStyle(feature){
@@ -294,6 +279,11 @@ function onEachFeature(feature, layer) {
 		//mouseout: resetHighlight,
 		click: zoomToFeature
 	});
+}
+
+// on mouse click on a feature, zoom in to it
+function zoomToFeature(e) {
+	map.fitBounds(e.target.getBounds());
 }
 
 // on mouse over, highlight the feature
@@ -318,11 +308,6 @@ function onEachFeature(feature, layer) {
 	geojson_layer.resetStyle(e.target);
     //info_panel.update() // resets infopanel when not highlighted, to default
 }*/
-
-// on mouse click on a feature, zoom in to it
-function zoomToFeature(e) {
-	map.fitBounds(e.target.getBounds());
-}
 
 /*function createInfoPanel(){
 

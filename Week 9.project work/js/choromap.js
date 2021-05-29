@@ -106,22 +106,10 @@ function getChoroStyle(feature){
 }
 
 
-// return the color for each feature. called in getChoroStyle --> gets color from population estimate number from data 
-/*function getColor(d) {
-	return d > 1000000 ? '#800026' : // syntax: if value of d is greater than xxxxx, then make it xxx color.
-		   d > 500000  ? '#BD0026' :
-		   d > 100000  ? '#E31A1C' :
-		   d > 50000  ? '#FC4E2A' :
-		   d > 10000   ? '#FD8D3C' :
-		   d > 5000   ? '#FEB24C' :
-		   d > 1000   ? '#FED976' :
-					  '#FFEDA0';
-}*/
-
 function createChoroLegend(){
 	legend.onAdd = function (choromap) {
         //creates the html div that holds the info for legend
-		var div = L.DomUtil.create('div', 'info legend'),
+		var div = L.DomUtil.create('div', 'legendinfo legend'),
         //brew info that gets put into legend
 		breaks = brew.getBreaks(),
 		labels = [],
@@ -137,11 +125,9 @@ function createChoroLegend(){
 					from.toFixed(2) + ' &ndash; ' + to.toFixed(2));
 				}
 			}
-			
 			div.innerHTML = labels.join('<br>');
 			return div;
 		};
-		
 		legend.addTo(choromap);
 }
 
