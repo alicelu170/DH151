@@ -9,7 +9,7 @@ body,html {
 
 body {
     display: grid;
-	grid-template-rows: 220px 1fr 1fr 135px 65% 1fr 1fr 135px 65% 1fr 1fr;
+	grid-template-rows: 220px 1fr 1fr 135px 65% 1fr 1fr 1fr 135px 65% 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 
 	  "header header header"
@@ -19,6 +19,7 @@ body {
     "mapsidebar mapcontent mapcontent"
     "tablefooter tablefooter tablefooter"
     "mapfooter mapfooter mapfooter"
+    "globalmapwriteup globalmapwriteup globalmapwriteup"
     "choroheader choroheader choroheader"
     "chorosidebar chorocontent chorocontent"
     "chorofooter chorofooter chorofooter"
@@ -38,12 +39,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: left;}
+mark {
+    background-color: rgb(149, 207, 131);
+    opacity: 60%;}
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
- 
   }
 
 /*h1 {text-align: center;}*/
@@ -107,7 +110,7 @@ a:hover{
 
 .mapsidebar {
   grid-area: mapsidebar;
-	color:rgb(134, 134, 134);
+  color: rgb(97, 97, 97);
 	padding-left:90px;
   padding-right:5px;
 	background-color: rgb(211, 245, 158);
@@ -122,7 +125,6 @@ a:hover{
 	padding: 3px;
   border-radius: 50px;
 	background:white;
-	/*border: 7px solid rgb(228, 228, 228);*/
   opacity:70%;
 	margin: 5px;
 	color:gray;
@@ -135,7 +137,8 @@ a:hover{
 
 .tablefooter {
   grid-area: tablefooter;
-  padding-left: 100px;
+  padding-left: 90px;
+  color: rgb(97, 97, 97);
 	background-color: rgb(211, 245, 158);
   width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -146,6 +149,14 @@ a:hover{
 	padding:10px;
 	background-color: rgba(212, 245, 158, 0.473);
   color: rgb(134, 134, 134);
+}
+
+.globalmapwriteup {
+  grid-area: globalmapwriteup;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: rgb(97, 97, 97);
+  background-color: rgb(211, 245, 158);
 }
 
 /* CHOROPLETH MAP */
@@ -297,6 +308,5 @@ div.gallery img {
   .sidenav a:hover {
     color: rgb(28, 49, 23);
   }
-
 
 

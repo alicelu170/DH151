@@ -36,11 +36,11 @@
 
 
 
-
 </head>
 
-<!-- layout of what is visible on site -->
 <body>
+
+<!-- TOP NAVIGATION BAR -->
 	<div class="header">
     <nav class="font1">
       <ul>
@@ -56,10 +56,10 @@
 
 
 
-  <!-- Side navigation -->
+<!-- FLOATING SIDE NAVIGATION -->
   <div class="sidenav">
     <a class = "font3" href="#">Top</a>
-    <a class = "font3" href="#GLOBAL-MAP">Map</a>
+    <a class = "font3" href="#GLOBAL-MAP">Global</a>
     <a class = "font3" href="#">MORE????</a>
     <a class = "font3" href="#CHORO-MAP">Impact</a>
     <a class = "font3" href="#ABOUT-US">About</a>
@@ -67,17 +67,19 @@
 
 
 
-<!-- Info on global plastic waste-->
+<!-- THE GLOBAL IMPACT OF WASTE -->
 	<div class="sidebar">
     <h2 class = "font1">THE GLOBAL IMPACT OF WASTE</h2>
     <p class="font2">
-      The goal of Rethink Recycle is to help users understand the scope of the global waste-management network. While many of us are able to sort our plastic waste and hope that it is in fact recycled and repurposed, the truth is that the recycling process is not so straightforward. 
+      The goal of Rethink Recycle is to help users understand the scope of the global waste-management network. While many of us are able to sort our plastic waste and hope that it is in fact recycled and repurposed, the truth is that the recycling process is not so straightforward. For instance, the United States only recycles a fraction of its plastic waste and instead exports a large amount of it to countries across the globe. 
       <br>
-      The United States only recycles a fraction of its plastic waste and instead exports a large amount of it to countries across the globe. While countries differ in the way they manage their own waste, these practices also all have different effects on both human and environmental health. Mismanaged plastic waste has been shown to increase risk of cardiovascular disease and affect access to potable water. Therefore, the true impact of plastic waste goes beyond sorting one’s recycling; Rethink Recycle hopes to make this reality clearer.   
+      While countries differ in the way they manage their own waste, these practices also all have different effects on both human and environmental health; one such consequence is that mismanaged plastic waste has been shown to increase risk of cardiovascular disease and affect access to potable water. Therefore, the true impact of plastic waste goes beyond sorting one’s recycling, and our goal is that Rethink Recycle will make this reality clearer.
     </p>	
   </div>
 
-<!-- Info on how-to-->
+
+
+<!-- HOW TO SECTION -->
   <div class = "howto">
     <h2 class="font1">HOW TO USE</h2>
     <p class = "font2">
@@ -91,28 +93,6 @@
     </p>
   </div>
 
-<!-- About the team-->
- <div class="footer">
-  <a id="ABOUT-US"></a>
-    <div class="gallery">
-        <img src="images/alice.png" alt="Alice" width="600" height="400">
-        <p class = "font2">
-        Alice (she/her) is a fourth year Human Biology & Society and Sociology double major. She is interested in public health and environmental justice and is looking forward to working with both academic research with web mapping in this project.
-        </p>
-    </div>
-    <div class="gallery">
-      <img src="images/emily.png" alt="Emily" width="600" height="400">
-      <p class = "font2">
-          Emily (she/her) is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively.
-      </p>
-    </div>
-    <div class="gallery">
-      <img src="images/hozumi.png" alt="Hozumi" width="600" height="400">
-      <p class = "font2">
-          Hozumi (she/her) is a fourth-year Sociology major and Global Health/Digital Humanities double minor. She is interested in using digital mapping to address global public health issues.
-      </p>
-    </div> 
-  </div>
 
 
 <!-- GLOBAL MAPROOM -->
@@ -143,23 +123,37 @@
   </p>
 	</div>
 
-
-  <!-- TABLE -->
-	<div class="tablefooter">
-  </div>
-
-  
 	<script src="js/map.js"></script>
 
 
 
+<!-- TABLE -->
+	<div class="tablefooter">
+  </div>
 
-  <!-- CHOROPLETH MAPROOM -->
+
+
+<!-- GLOBAL MAP WRITEUP -->
+<div class="globalmapwriteup">
+  <h2 class = "font1"> WHAT DOES THIS SHOW? </h2>
+  <p  class = "font2">
+    This graph examines not only the volume of plastic that is exported from the United States alone each year, but also highlights the primary importers of plastic waste. What’s interesting to note is that in all three years, <mark>Canada consistently remains one of the biggest importers of the US’s plastic waste,</mark> likely due to the proximity of the two countries. Other notable trends that are consistent throughout all three years are that <mark>the US exports large volumes of plastic waste to East and Southeast Asia</mark> and that although there are exports to Europe and South America, these are not as significant. 
+  <br>
+  <br>
+    Breaking down the map further shows other interesting patterns. <mark>The most eye-catching trend would be in 2017, in which there was a sudden uptick in exporting plastic waste to China. [insert src]</mark> This rise is notable due to both the volume of plastic waste exported (no other country matches the amount in any of the three years) and due to the abruptness in the trend -- it was only something that occurred in 2017. Other notable elements include the <mark>increase of plastic waste export in Malaysia;</mark> while Malaysia was merely a minor importer of US plastic waste in 2016, it rapidly grew to become one of the larger importers in 2017 and 2018. 
+  <br>
+  <br>
+    Overall, all three years show that the <mark>exportation of the United States’s plastic waste is very global in nature.</mark> Though the individual countries and the volume may change from year to year, what this graph highlights is that the United States acts as a huge distributor of plastic. Not only does this affect how waste travels on a surface level, but there are also many underlying factors (such as economic, environmental, etc) that are affected as a result. 
+  </p>
+</div>
+
+
+
+<!-- CHOROPLETH MAPROOM -->
   <div class="choroheader">
     <a id="CHORO-MAP"></a>
 		<h1>IMPACT MAP</h1>
 	</div>
-
 
   <div class="chorosidebar">
 		<p class = "font2">This map shows the amount of plastic waste that are mismanaged in each country. Hover over a country to see the amount of mismanaged plastic waste.
@@ -182,6 +176,32 @@
 	</div>
 
 	<script src="js/choromap.js"></script>
+
+
+
+
+<!-- ABOUT THE TEAM -->
+<div class="footer">
+  <a id="ABOUT-US"></a>
+    <div class="gallery">
+        <img src="images/alice.png" alt="Alice" width="600" height="400">
+        <p class = "font2">
+        Alice (she/her) is a fourth year Human Biology & Society and Sociology double major. She is interested in public health and environmental justice and is looking forward to working with both academic research and web-mapping.
+        </p>
+    </div>
+    <div class="gallery">
+      <img src="images/emily.png" alt="Emily" width="600" height="400">
+      <p class = "font2">
+          Emily (she/her) is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively.
+      </p>
+    </div>
+    <div class="gallery">
+      <img src="images/hozumi.png" alt="Hozumi" width="600" height="400">
+      <p class = "font2">
+          Hozumi (she/her) is a fourth-year Sociology major and Global Health/Digital Humanities double minor. She is interested in using digital mapping to address global public health issues.
+      </p>
+    </div> 
+  </div>
 
 </body>
 </html>

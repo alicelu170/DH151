@@ -77,11 +77,15 @@ function createTable(data){
 		{ name: 'Partner', type: "text"},
 		{ name: 'Netweight (kg)', type: 'number'},
 	]
-    let w = $(window).width()-100;
+
+    let w = $(window).width()-90;
+
 	// create the table in our footer
 	$(".tablefooter").jsGrid({
 		width: w,
 		height: "400px",
+
+		
 
         editing: true,
 		sorting: true,
