@@ -70,7 +70,7 @@ $('.chorosidebar').append(`
 	<div class = "chorosidebar-item"
 	onclick =  "mapChoroGeoJSON('Coverage')">
 	<p class = "font2">
-	WATER?! </p>
+	Inadequate water system coverage </p>
 	</div>`);
 
 

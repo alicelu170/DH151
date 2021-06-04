@@ -88,9 +88,6 @@ a:hover{
 }
 
 
-
-
-
 * {box-sizing: border-box;}
 .mySlides {
   display: none;
@@ -302,7 +299,7 @@ a:hover{
 	color:gray;
 }
 
-.chorosidebar-item:hover{
+.chorosidebar-item:hover {
   opacity:90%;
   cursor: pointer;
 }
