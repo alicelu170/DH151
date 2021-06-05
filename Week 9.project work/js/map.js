@@ -78,7 +78,7 @@ function createTable(data){
 		{ name: 'Netweight (kg)', type: 'number'},
 	]
 
-    let w = $(window).width()-90;
+    let w = $(window).width()-100;
 
 	// create the table in our footer
 	$(".tablefooter").jsGrid({

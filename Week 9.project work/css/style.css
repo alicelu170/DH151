@@ -24,7 +24,7 @@ body {
     "chorosidebar chorocontent chorocontent"
     "chorofooter chorofooter chorofooter"
     "landfillsheader landfillsheader landfillsheader"
-    "landfillssidebar landfillscontent landfillscontent"
+    "landfillscontent landfillscontent landfillscontent"
     "landfillsfooter landfillsfooter landfillsfooter"
     "footer footer footer"
     "slideshow-container slideshow-container slideshow-container";
@@ -52,6 +52,13 @@ mark {
     margin-left: auto;
     margin-right: auto;
   }
+  
+  .leaflet-popup-content-wrapper .leaflet-popup-content {
+    color:rgb(134, 134, 134);
+    text-align: center;
+
+  }
+  
 
 /*h1 {text-align: center;}*/
 
@@ -371,35 +378,37 @@ a:hover{
 .landfillsheader {
 	grid-area: landfillsheader;
 	padding:10px;
-    background-color: rgb(98, 173, 148);
+  background-color: rgb(98, 173, 148);
 	color: rgb(220, 243, 234);
 }
-.landfillssidebar {
+/*.landfillssidebar {
 	grid-area: landfillssidebar;
 	padding-left:100px;
   padding-top: 10px;
   background-color: rgb(220, 243, 234);
-	overflow: auto; /* auto wraps text to scrollbar*/
-  
-}
+	overflow: auto;  auto wraps text to scrollbar
+}*/
+
 .landfillscontent {
 	grid-area: landfillscontent;
+  padding-left: 100px;
+  background-color: rgb(98, 173, 148);
 }
 
-.landfillsbackground {
+/*.landfillsbackground {
     grid-area: body;
     padding: 10px;
     background-color: #777;
-}
+}*/
 
-.landfillssidebar-item{
+/*.landfillssidebar-item{
 	padding: 10px;
 	background: rgb(179, 221, 185);
 	border: 5px solid rgb(255, 255, 255);
 	margin: 5px;
 	color:rgb(0, 0, 0);
-	cursor: pointer; /*cursor changes to hand when hovering*/;
-}
+	cursor: pointer; cursor changes to hand when hovering;
+}*/
 .landfillsfooter {
 	grid-area: landfillsfooter;
 	padding:10px;

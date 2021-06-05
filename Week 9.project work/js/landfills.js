@@ -65,26 +65,28 @@ function maplandfillsCSV(data){
         
         //chains a mouseover function that shows the location and image in popup when HOVERED
         .on('mouseover',function(){
-			this.bindPopup(`${item.name}<br><img src="${item.imageurl}">`).openPopup()
+			this.bindPopup(`<b>${item.name}</b><br>${item.size}<br>${item.about}<br><img width="250" src="${item.imageurl}">`).openPopup()
 		})
-
+        .on('click', function(){
+            panToImage(index);
+        })
+        
 		// add marker to featuregroup
 		landfillsmarkers.addLayer(landfillsmarker)
 
 		// add entry to sidebar
-		$('.landfillssidebar').append(`<img src="${item.imageurl}" onclick="panToImage(${index})">`)
+		/*$('.landfillssidebar').append(`<img src="${item.imageurl}" onclick="panToImage(${index})">`)*/
 	})
-
+    
 	// add featuregroup of markers to map
 	landfillsmarkers.addTo(landfillsmap)
+
 
 	// fit markers to map so that the map goes to the fitted markers
 	landfillsmap.fitBounds(landfillsmarkers.getBounds())
 }
 
 function panToImage(index){
-	// zoom to level 17 first
-	landfillsmap.setZoom(8);
-	// pan to the marker
+	landfillsmap.setZoom(9);
 	landfillsmap.panTo(landfillsmarkers.getLayers()[index]._latlng);
 }
