@@ -9,7 +9,7 @@ body,html {
 
 body {
     display: grid;
-	grid-template-rows: 220px 1fr 1fr 135px 65% 1fr 1fr 1fr 135px 65% 1fr 1fr 1fr;
+	grid-template-rows: 220px 1fr 1fr 135px 65% 1fr 1fr 1fr 135px 65% 1fr 135px 65% 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 
 	  "header header header"
@@ -23,6 +23,9 @@ body {
     "choroheader choroheader choroheader"
     "chorosidebar chorocontent chorocontent"
     "chorofooter chorofooter chorofooter"
+    "landfillsheader landfillsheader landfillsheader"
+    "landfillssidebar landfillscontent landfillscontent"
+    "landfillsfooter landfillsfooter landfillsfooter"
     "footer footer footer"
     "slideshow-container slideshow-container slideshow-container";
 }
@@ -217,7 +220,7 @@ a:hover{
 .mapsidebar {
   grid-area: mapsidebar;
   color: rgb(97, 97, 97);
-	padding-left:90px;
+	padding-left:100px;
   padding-right:5px;
 	background-color: rgb(211, 245, 158);
 	overflow: auto;
@@ -244,7 +247,7 @@ a:hover{
 
 .tablefooter {
   grid-area: tablefooter;
-  padding-left: 90px;
+  padding-left: 100px;
   color: rgb(97, 97, 97);
 	background-color: rgb(211, 245, 158);
   width: 100%;
@@ -284,7 +287,7 @@ a:hover{
 .chorosidebar {
 	color: rgb(63, 63, 63);
 	grid-area: chorosidebar;
-	padding-left:90px;
+	padding-left:100px;
   padding-right:5px;
 	background-color: rgb(138, 180, 166);
 	overflow: auto;
@@ -360,6 +363,54 @@ a:hover{
 
 
 
+/* LANDFILLS MAP */
+#landfillsmap {
+	height: 100%;
+}
+
+.landfillsheader {
+	grid-area: landfillsheader;
+	padding:10px;
+    background-color: rgb(98, 173, 148);
+	color: rgb(220, 243, 234);
+}
+.landfillssidebar {
+	grid-area: landfillssidebar;
+	padding-left:100px;
+  padding-top: 10px;
+  background-color: rgb(220, 243, 234);
+	overflow: auto; /* auto wraps text to scrollbar*/
+  
+}
+.landfillscontent {
+	grid-area: landfillscontent;
+}
+
+.landfillsbackground {
+    grid-area: body;
+    padding: 10px;
+    background-color: #777;
+}
+
+.landfillssidebar-item{
+	padding: 10px;
+	background: rgb(179, 221, 185);
+	border: 5px solid rgb(255, 255, 255);
+	margin: 5px;
+	color:rgb(0, 0, 0);
+	cursor: pointer; /*cursor changes to hand when hovering*/;
+}
+.landfillsfooter {
+	grid-area: landfillsfooter;
+	padding:10px;
+	background-color: rgba(138, 180, 166, 0.521);
+  color: rgb(63, 63, 63);
+}
+
+
+
+
+
 /* ABOUT US SECTION */
 .footer{
     grid-area: footer;
@@ -399,7 +450,7 @@ div.gallery img {
 /* The sidebar menu */
 .sidenav {
     
-    width: 70px; /* Set the width of the sidebar */
+    width: 75px; /* Set the width of the sidebar */
     border-radius: 20px;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; 

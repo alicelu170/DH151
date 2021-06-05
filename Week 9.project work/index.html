@@ -45,7 +45,7 @@
     <nav class="font1">
       <ul>
         <li><a href="#GLOBAL-MAP">Global Map</a></li> 
-        <li><a href="#">MORE????</a></li>
+        <li><a href="#LANDFILL-MAP">Landfills</a></li>
         <li><a href="#CHORO-MAP">Impact Map</a></li>
         <li><a href="#ABOUT-US">About the Team</a></li>
       </ul>
@@ -60,7 +60,7 @@
   <div class="sidenav">
     <a class = "font3" href="#">Top</a>
     <a class = "font3" href="#GLOBAL-MAP">Global</a>
-    <a class = "font3" href="#">MORE????</a>
+    <a class = "font3" href="#LANDFILL-MAP">Landfills</a>
     <a class = "font3" href="#CHORO-MAP">Impact</a>
     <a class = "font3" href="#ABOUT-US">About</a>
   </div>
@@ -241,8 +241,6 @@
 </div>
 
 
-
-
 <!-- SCRIPT FOR MAKING SLIDESHOW -->
 <script>
   var slideIndex = 1;
@@ -274,6 +272,35 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
+
+
+
+
+<!-- LANDFILLS MAP-->
+<div class="landfillsheader">
+  <a id="LANDFILL-MAP"></a>
+  <h1 class= "font0"> GLOBAL LANDFILLS</h1>
+</div>
+
+
+<div class="landfillssidebar">
+  
+</div>
+<div class="landfillscontent">
+  <div id="landfillsmap"></div>
+</div>
+<div class="landfillsfooter">
+  <p class = "font2">
+  Source: <a href="https://wasteadvantagemag.com/largest-landfills-waste-sites-and-trash-dumps-in-the-world/">Waste Advantage Magazine</a>
+</p>
+</div>
+
+<script src="js/landfills.js"></script>
+
+
+
+
 
 
 </body>
