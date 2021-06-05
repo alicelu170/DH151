@@ -8,8 +8,8 @@ body,html {
 }
 
 body {
-    display: grid;
-	grid-template-rows: 220px 1fr 1fr 135px 65% 1fr 1fr 1fr 135px 65% 1fr 135px 65% 1fr 1fr 1fr;
+  display: grid;
+	grid-template-rows: 220px 1fr 1fr 135px 65% 1fr 1fr 1fr 135px 65% 1fr 135px 40% 65% 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 
 	  "header header header"
@@ -24,6 +24,7 @@ body {
     "chorosidebar chorocontent chorocontent"
     "chorofooter chorofooter chorofooter"
     "landfillsheader landfillsheader landfillsheader"
+    "landfillsintro landfillsintro landfillsintro"
     "landfillscontent landfillscontent landfillscontent"
     "landfillsfooter landfillsfooter landfillsfooter"
     "footer footer footer"
@@ -160,7 +161,7 @@ a:hover{
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
+cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -381,6 +382,13 @@ a:hover{
   background-color: rgb(98, 173, 148);
 	color: rgb(220, 243, 234);
 }
+
+.landfillsintro {
+  grid-area: landfillsintro;
+  padding-left: 100px;
+  background-color: rgb(161, 219, 200);
+  color: rgb(63, 63, 63);
+}
 /*.landfillssidebar {
 	grid-area: landfillssidebar;
 	padding-left:100px;
@@ -392,7 +400,7 @@ a:hover{
 .landfillscontent {
 	grid-area: landfillscontent;
   padding-left: 100px;
-  background-color: rgb(98, 173, 148);
+  background-color: rgb(161, 219, 200);
 }
 
 /*.landfillsbackground {
