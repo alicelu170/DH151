@@ -72,7 +72,7 @@ function maplandfillsCSV(data){
 		landfillsmarkers.addLayer(landfillsmarker)
 
 		// add entry to sidebar
-		$('.landfillssidebar').append(`<img src="${item.imageurl}" onmouseover="panToImage(${index})">`)
+		$('.landfillssidebar').append(`<img src="${item.imageurl}" onclick="panToImage(${index})">`)
 	})
 
 	// add featuregroup of markers to map
