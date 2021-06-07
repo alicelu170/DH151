@@ -9,7 +9,7 @@ body,html {
 
 body {
   display: grid;
-	grid-template-rows: 220px 1fr 135px 65% 1fr 1fr 1fr 135px 65% 1fr 135px 1fr 65% 1fr 1fr 1fr;
+	grid-template-rows: 220px 1fr 135px 65% 1fr 1fr 1fr 135px 65% 1fr 1fr 135px 1fr 65% 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 
 	  "header header header"
@@ -22,6 +22,7 @@ body {
     "choroheader choroheader choroheader"
     "chorosidebar chorocontent chorocontent"
     "chorofooter chorofooter chorofooter"
+    "choromapwriteup choromapwriteup choromapwriteup"
     "landfillsheader landfillsheader landfillsheader"
     "landfillsintro landfillsintro landfillsintro"
     "landfillscontent landfillscontent landfillscontent"
@@ -37,6 +38,8 @@ body {
     "footer footer footer"
 
 }
+
+
 .font0 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -54,6 +57,11 @@ body {
 mark {
     background-color: rgb(149, 207, 131);
     opacity: 60%;}
+
+mark2{
+  background-color: rgb(176, 240, 220);
+  opacity: 60%;
+}
 
 .center {
     display: block;
@@ -238,17 +246,17 @@ a:hover{
 }
 
 
-  /*info panel*/
-  .legendinfo {
-    padding: 6px 8px;
-    font: 14px 'Roboto', sans-serif;
-    background: white;
-    background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    min-width: auto;
-    min-height: auto;
-  }
+/*info panel*/
+.legendinfo {
+  padding: 6px 8px;
+  font: 14px 'Roboto', sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  min-width: auto;
+  min-height: auto;
+}
 
 .legend {
 	line-height: 18px;
@@ -263,6 +271,14 @@ a:hover{
 	opacity: 0.7;
 }
 
+.choromapwriteup{
+  grid-area: choromapwriteup;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: rgb(63, 63, 63);
+  background-color: rgb(138, 180, 166);
+}
+
 
 
 /* LANDFILLS MAP */
@@ -274,7 +290,10 @@ a:hover{
 	grid-area: landfillsheader;
 	padding:10px;
   background-color: rgb(98, 173, 148);
-	color: rgb(220, 243, 234);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 23px;
+	color: rgb(19, 116, 78);
 }
 
 .landfillsintro {
@@ -283,13 +302,6 @@ a:hover{
   background-color: rgb(161, 219, 200);
   color: rgb(63, 63, 63);
 }
-/*.landfillssidebar {
-	grid-area: landfillssidebar;
-	padding-left:100px;
-  padding-top: 10px;
-  background-color: rgb(220, 243, 234);
-	overflow: auto;  auto wraps text to scrollbar
-}*/
 
 .landfillscontent {
 	grid-area: landfillscontent;
@@ -297,20 +309,6 @@ a:hover{
   background-color: rgb(161, 219, 200);
 }
 
-/*.landfillsbackground {
-    grid-area: body;
-    padding: 10px;
-    background-color: #777;
-}*/
-
-/*.landfillssidebar-item{
-	padding: 10px;
-	background: rgb(179, 221, 185);
-	border: 5px solid rgb(255, 255, 255);
-	margin: 5px;
-	color:rgb(0, 0, 0);
-	cursor: pointer; cursor changes to hand when hovering;
-}*/
 .landfillsfooter {
 	grid-area: landfillsfooter;
 	padding:10px;

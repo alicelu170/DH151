@@ -90,3 +90,4 @@ function panToImage(index){
 	landfillsmap.setZoom(9);
 	landfillsmap.panTo(landfillsmarkers.getLayers()[index]._latlng);
 }
+

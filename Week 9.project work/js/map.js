@@ -290,51 +290,9 @@ function zoomToFeature(e) {
 	map.fitBounds(e.target.getBounds());
 }
 
-// on mouse over, highlight the feature
-/*function highlightFeature(e) {
-	var layer = e.target;
 
-	// style to use on mouse over
-	layer.setStyle({
-		weight: 2,
-		color: '#89b06e',
-		fillOpacity: 0.5
-	});
-	if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-		layer.bringToFront();
-	}
-     //updates the infopanel. called function in later code
-     //info_panel.update(layer.feature.properties)
-}*/
 
-// on mouse out, reset the style, otherwise, it will remain highlighted
-/*function resetHighlight(e) {
-	geojson_layer.resetStyle(e.target);
-    //info_panel.update() // resets infopanel when not highlighted, to default
-}*/
 
-/*function createInfoPanel(){
 
-	info_panel.onAdd = function (map) {
-		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-		this.update();
-		return this._div;
-	};
 
-	// method that we will use to update the control based on feature properties fed to it. 
-    //whatever is highlighted, put that in the info panel.
-	info_panel.update = function (properties) {
-		// if feature is highlighted
-		if(properties){
-			this._div.innerHTML = `<b>${properties.name}</b><br>${fieldtomap}: ${properties[fieldtomap]}`;
-		}
-		// if feature is not highlighted:
-        //but if nothing is highlighted, then panel will tell user to do something
-		else
-		{
-			this._div.innerHTML = 'Hover over a country';
-		}
-	};
 
-	info_panel.addTo(map);
-}*/
