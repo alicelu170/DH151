@@ -486,6 +486,7 @@ div.gallery img {
   padding-left: 150px;
   padding-right: 150px;
   font-family: 'Roboto', sans-serif; 
+  color: rgb(97, 97, 97);
   text-align: left;
   background-color: rgb(196, 224, 161);
 }
